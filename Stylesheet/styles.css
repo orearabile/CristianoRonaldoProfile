@@ -1,0 +1,382 @@
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 79%;
+    margin: auto;
+    height: 93px;
+    margin-top: 0.5em;
+}
+#navi{
+    display: flex;
+    list-style-type: none;
+    margin-left: 5em;
+
+}
+#HSec{
+    flex: 1;    
+}
+#Hh3{
+    padding-left: 14em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: antiquewhite;
+    color: #5a2d0c;
+}
+nav{
+    padding-left: 6em;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    background-color: blanchedalmond;
+}
+body{
+    background-color: bisque;
+}
+div{
+    width: 80%;
+    margin: auto;
+}
+.point{
+    padding-left: 3em;
+}
+#cont{
+    display: flex;
+}
+#madrid{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#madrid1{
+    flex: 1 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em;
+}
+#madrid2{
+    flex: 2 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em;
+}
+#madrid3{
+    flex: 3 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em;
+}
+#madrid4{
+    flex: 4 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em;
+}
+#madrid5{
+    flex: 5 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em;
+}
+#madrid6{
+    flex: 6 33%;
+    box-sizing: border-box;
+    padding-right: 0.7em
+}
+p{
+    background-color: beige;
+    padding: 0.2em;
+}
+.Juventus{
+    display: flex;
+}
+.netWorth{
+    display: flex;
+
+}
+#ImgNetWorth{
+    margin-left: 0.5em;
+    margin-right: 1.5em;
+    margin-top: 0.9em;
+}
+#foundation{
+    flex: 1 50%;
+
+}
+#formSec{
+    flex: 2 50%;
+    padding-top: 1.5em;
+
+}
+.awards{
+    display: none;
+    background-color: aqua;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td{
+    border: 3px solid black;
+    padding: 0.5em;
+    text-align: left;
+}
+th{
+    background-color: #f2f2f2;
+}
+#miniP{
+    padding-right: 2em;
+}
+#imgFam{
+    padding-top: 1.2em;
+}
+h3{
+    padding-bottom: 0.1em;
+}
+fieldset{
+    background-color: #ccc;
+}
+.txt{
+    font-style: italic;
+    color: darkorange;
+}
+.tip{
+    position: relative;
+    font-weight: bold;
+    color: green;
+}
+
+.tipText{
+    display: none;
+    position: absolute;
+    top: 1em;
+    left: 11em;
+    background: #eee;
+    padding: 5px;
+    border: 1px solid #ccc;
+    z-index: 5;
+}
+.tip:hover .tipText{
+    display: block;
+}
+#IMG{
+    size: 3em;
+}
+body{
+    padding-top: 150px;
+}
+a{
+    text-decoration: none;
+    color: chocolate;
+}
+a:hover{
+    color: orange
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+    padding: 10px;
+    padding-top: 130px; 
+  }
+
+  div {
+    width: 95%;
+    margin: auto;
+  }
+
+  header {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 0;
+    padding: 0.5em;
+  }
+
+  #Hh3 {
+    text-align: center;
+    font-size: 1.2em;
+    padding-left: 0;
+  }
+
+  nav {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #navi {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .point {
+    padding-left: 0;
+    margin: 5px 0;
+  }
+
+  #IMG,
+  #imgFam,
+  #ImgNetWorth {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .Juventus,
+  .NetWorth,
+  .netWorth,
+  #cont,
+  #madrid {
+    display: block;
+  }
+
+  #miniP {
+    padding-right: 0;
+  }
+
+  table {
+    font-size: 0.9em;
+    width: 100%;
+  }
+
+  fieldset {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #formSec,
+  #foundation {
+    width: 100%;
+    display: block;
+  }
+
+  #madrid1, #madrid2, #madrid3, #madrid4, #madrid5, #madrid6 {
+    flex: 1 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
+  footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0.5em;
+  }
+
+  footer .social {
+  flex-direction: column;
+  gap: 0.5em;
+  }
+
+}
+@media print {
+  nav,
+  #IMG,
+  footer,
+  .no-print {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  header {
+    position: static;
+    background: none;
+    color: black;
+    width: 100%;
+    margin: 0;
+  }
+
+  h1, h3 {
+    page-break-after: avoid;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  #formSec input,
+  #formSec textarea,
+  #formSec select {
+    border: 1px solid #000;
+    padding: 5px;
+  }
+  footer {
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0.5em;
+  }
+
+  footer .social {
+  flex-direction: column;
+  gap: 0.5em;
+  }
+
+}
+.manuLegends {
+  margin-left: 2em;
+  color: darkred;
+  font-weight: bold;
+}
+footer {
+  background-color: #f2e3d9;
+  color: #5a2d0c;
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+  border-top: 2px solid chocolate;
+}
+
+footer p {
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+footer .social {
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+footer .social a {
+  text-decoration: none;
+  color: chocolate;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  color: orange;
+}
+.errorMsg {
+  color: red;
+  font-weight: bold;
+}
+
+.successMsg {
+  color: green;
+  font-weight: bold;
+}
+legend{
+    background-color: #ccc;
+}
